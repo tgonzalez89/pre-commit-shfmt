@@ -1,0 +1,10 @@
+- id: shfmt
+  name: shfmt
+  description: Shell source code formatter
+  language: python
+  entry: shfmt
+  args: [-w, -s]
+  types: [shell]
+  exclude_types: [csh, tcsh, zsh]
+  stages: [pre-commit, pre-merge-commit, pre-push, manual]
+  minimum_pre_commit_version: 3.2.0 # for "stages" names
