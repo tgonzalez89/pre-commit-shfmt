@@ -13,7 +13,7 @@ from pathlib import Path
 from setuptools import setup
 from setuptools.command.install import install as orig_install
 
-SHFMT_VERSION = "3.10.0"
+SHFMT_VERSION = "3.12.0"
 
 
 class build(orig_build):
